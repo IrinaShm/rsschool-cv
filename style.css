@@ -6,33 +6,141 @@ html,
 body {
   height: 100%;
   position: relative;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 24px;
   color: #191919;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
 }
 
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .container {
-  max-width: 1170px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 30px;
 }
 
+.header__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  background-color: #0aa8a8;
+  background: url(images/bg.jpg) center / cover no-repeat;
+}
+
+.header__title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  color: #191919;
+  border-bottom: 1px solid #0aa8a8;
+  margin: 10px 0;
+}
+
+.header__descr {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+
 .header__img {
+  display: block;
+  margin: 0 auto;
   width: 150px;
   height: 150px;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 30px 50px;
+  border: 1px solid #0aa8a8;
+}
+
+.about,
+.skills {
+  flex-basis: 48%;
+}
+
+.skills__list {
+  margin: 16px 0;
+}
+
+.skills__item {
+  background: url(images/check-circle.png) left center no-repeat;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.span {
+  font-weight: 600;
+}
+
+.skills__tech,
+.skills__language,
+.skills__education {
+  margin-bottom: 30px;
+}
+
+.footer__contacts {
+  display: flex;
+  background-color: #0aa8a8;
+  padding: 30px 50px;
+}
+
+.footer__inner {
+  display: flex;
+  margin-left: 40px;
+}
+
+.footer__list {
+  margin-right: 40px;
+}
+
 .footer__logo {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
+}
+
+.footer__link {
+  color: #fff;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
 }

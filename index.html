@@ -15,56 +15,66 @@
 <body>
   <header class="header">
     <div class="container">
-      <img class="header__img" src="images/avatar.png" alt="avatar">
-      <h1 class="header__title">Irina Shmykova</h1>
-      <div class="header__descr">Junior Dev Javascript</div>
+      <div class="header__inner">
+        <img class="header__img" src="images/avatar.png" alt="avatar">
+        <h1 class="header__title">Irina Shmykova</h1>
+        <div class="header__descr">Junior Dev Javascript</div>
+      </div>
     </div>
   </header>
+
   <main>
     <div class="container">
-      <section class="about">
-        <h2 class="about__title">About me:</h2>
-        <p class="about__descr">My goal as a js developer is to apply my technical knowledge and skills in the
-          development of IT solutions that will solve user requests. And also there is a great desire to develop in the
-          field of IT.</p>
-        <p class="about__descr">I have experience in self-development of a business card site using CMS WordPress. I
-          have the ability to learn quickly, I am also responsible.</p>
-      </section>
-      <section class="skills">
-        <div class="skills__tech">
-          <h2 class="skills__title">Technical Skills:</h2>
-          <ul class="skills__list">
-            <li class="skills__item">HTML5</li>
-            <li class="skills__item">CSS3</li>
-            <li class="skills__item">SCSS</li>
-          </ul>
-        </div>
-        <div class="skills__language">
-          <h2 class="skills__title">Language</h2>
-          <p class="skills__text">English Level: Beginner (A1)</p>
-        </div>
-        <div class="skills__education">
-          <h2 class="skills__title">Education</h2>
-          <div class="skills__date">2010</div>
-          <div class="skills__university">University KSU Russia</div>
-          <div class="skills__university">Specialty: process automation</div>
-        </div>
-      </section>
+      <div class="wrapper">
+        <section class="about">
+          <h2 class="title">About me</h2>
+          <p class="about__descr">My goal as a js developer is to apply my technical knowledge and skills in the
+            development of IT solutions that will solve user requests. And also there is a great desire to develop in
+            the
+            field of IT.</p>
+          <p class="about__descr">I have experience in self-development of a business card site using CMS WordPress. I
+            have the ability to learn quickly, I am also responsible.</p>
+        </section>
+        <section class="skills">
+          <div class="skills__tech">
+            <h2 class="title">Technical Skills</h2>
+            <ul class="skills__list">
+              <li class="skills__item">HTML5</li>
+              <li class="skills__item">CSS3</li>
+              <li class="skills__item">SCSS</li>
+            </ul>
+          </div>
+          <div class="skills__language">
+            <h2 class="title">Language</h2>
+            <p class="skills__text"><span class="span">English Level:</span> Beginner (A1)</p>
+          </div>
+          <div class="skills__education">
+            <h2 class="title">Education</h2>
+            <div class="skills__date span">2010</div>
+            <div class="skills__university"><span class="span">University:</span> KSU Russia</div>
+            <div class="skills__university"><span class="span">Specialty:</span> process automation</div>
+          </div>
+        </section>
+      </div>
     </div>
   </main>
   <footer class="footer">
     <div class="container">
       <div class="footer__contacts">
         <h2 class="footer__title">Contacts:</h2>
-        <div class="footer__email">email:
-          <a href="mailto:irinasss2009@yandex.ru">irinasss2009@yandex.ru</a>
-        </div>
-        <div class="footer__github">github:
-          <a href="https://github.com/IrinaShm">@IrinaShm</a>
-        </div>
-        <div class="footer__logo">
-          <img src="images/rs_school_js.svg" alt="logo">
-          <a href="https://rs.school/js/">RS Shool</a>
+        <div class="footer__inner">
+          <ul class="footer__list">
+            <li class="footer__email">email:
+              <a class="footer__link" href="mailto:irinasss2009@yandex.ru">irinasss2009@yandex.ru</a>
+            </li>
+            <li class="footer__github">github:
+              <a class="footer__link" href="https://github.com/IrinaShm">@IrinaShm</a>
+            </li>
+          </ul>
+          <div class="footer__logo">
+            <img src="images/rs_school_js.svg" alt="logo">
+            <a class="footer__link" href="https://rs.school/js/">RS Shool</a>
+          </div>
         </div>
       </div>
     </div>
