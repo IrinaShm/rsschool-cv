@@ -9,7 +9,8 @@ body {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  background-color: #d1d1d1;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -22,7 +23,9 @@ a {
 }
 
 h1,
-h2 {
+h2,
+h3,
+p {
   margin: 0;
   padding: 0;
 }
@@ -32,6 +35,27 @@ ul {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+/* ------------- common styles ----------- */
+
+.wrapper-main {
+  padding: 30px 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 30px 50px;
+  border: 1px solid #0aa8a8;
+}
+
+@media (max-width: 520px) {
+  .wrapper {
+    padding: 15px;
+  }
 }
 
 .container {
@@ -50,8 +74,15 @@ ul {
   background: url(images/bg.jpg) center / cover no-repeat;
 }
 
+@media (max-width: 520px) {
+  .header__inner {
+    padding: 30px 0 20px;
+  }
+}
+
 .header__title {
   font-size: 32px;
+  line-height: 42px;
   font-weight: 600;
   color: #fff;
   text-align: center;
@@ -64,8 +95,20 @@ ul {
   line-height: 36px;
   font-weight: 600;
   color: #191919;
-  border-bottom: 1px solid #0aa8a8;
-  margin: 10px 0;
+  border-bottom: 2px solid #0aa8a8;
+  margin: 15px 0;
+}
+
+@media (max-width: 520px) {
+  .header__title {
+    font-size: 26px;
+    margin: 15px 0 0;
+  }
+  .title {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 10px 0;
+  }
 }
 
 .header__descr {
@@ -83,63 +126,165 @@ ul {
   height: 150px;
 }
 
-.wrapper {
-  display: flex;
-  justify-content: space-between;
-  background-color: #f0f0f0;
-  padding: 30px 50px;
-  border: 1px solid #0aa8a8;
-}
-
 .about,
 .skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.flex {
   flex-basis: 48%;
 }
 
-.skills__list {
+.span {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+/* ------------- about styles ----------- */
+
+.about__list {
   margin: 16px 0;
 }
 
-.skills__item {
+.about__item {
   background: url(images/check-circle.png) left center no-repeat;
   padding-left: 30px;
   margin-bottom: 10px;
 }
 
-.span {
-  font-weight: 600;
+.about__descr {
+  margin-bottom: 15px;
 }
 
-.skills__tech,
-.skills__language,
-.skills__education {
-  margin-bottom: 30px;
+@media (max-width: 520px) {
+  .about__inner,
+  .about__skills {
+    flex-basis: 100%;
+  }
 }
+
+/* ------------- skills styles ----------- */
+
+.skills {
+  flex-basis: 100%;
+}
+
+.skills__item {
+  position: relative;
+  padding-left: 25px;
+}
+
+.skills__item::before {
+  content: "";
+  background-color: #0aa8a8;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: 10;
+}
+
+@media (max-width: 520px) {
+  .skills__soft,
+  .skills__language {
+    flex-basis: 100%;
+  }
+}
+
+/* ------------- education styles ----------- */
+
+.education {
+  flex-basis: 100%;
+}
+
+.education__inner {
+  display: flex;
+}
+
+.education__date {
+  width: 100px;
+}
+
+.education__text {
+  margin-bottom: 15px;
+}
+
+.sample-code {
+  min-width: 100%;
+}
+
+.javascript {
+  margin-top: 30px;
+}
+
+@media (max-width: 520px) {
+  .education__inner {
+    flex-wrap: wrap;
+  }
+  .javascript {
+    margin-top: 15px;
+  }
+}
+
+/* ------------- footer styles ----------- */
 
 .footer__contacts {
   display: flex;
+  flex-wrap: wrap;
   background-color: #0aa8a8;
   padding: 30px 50px;
 }
 
+@media (max-width: 520px) {
+  .footer__contacts {
+    padding: 15px;
+  }
+}
+
+.footer__title {
+  margin-right: 40px;
+  margin-bottom: 15px;
+}
+
 .footer__inner {
   display: flex;
-  margin-left: 40px;
+  align-items: start;
+}
+
+@media (max-width: 520px) {
+  .footer__inner {
+    flex-wrap: wrap;
+  }
 }
 
 .footer__list {
   margin-right: 40px;
 }
 
-.footer__logo {
-  width: 100px;
-  height: 100px;
+@media (max-width: 520px) {
+  .footer__list {
+    margin-bottom: 15px;
+  }
 }
 
 .footer__link {
+  display: block;
   color: #fff;
 }
 
 .footer__link:hover {
   text-decoration: underline;
+}
+
+.footer__img {
+  display: block;
+  width: 100px;
+  height: 40px;
+  padding-bottom: 15px;
 }
