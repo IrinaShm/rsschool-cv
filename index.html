@@ -8,77 +8,120 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/base16/classic-dark.min.css"
+    integrity="sha512-AMYImiuw5AejvalwxgyLnKlED0vtzKpg9lAVYn2jedk1Ii9T8VIdHh8nA4YrFn49HB83p/GsdnW6dnCj4Cdo0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
   <title>My CV</title>
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="header__inner">
-        <img class="header__img" src="images/avatar.png" alt="avatar">
-        <h1 class="header__title">Irina Shmykova</h1>
-        <div class="header__descr">Junior Dev Javascript</div>
+  <div class="wrapper-main">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <img class="header__img" src="images/avatar.png" alt="avatar">
+          <h1 class="header__title">Irina Shmykova</h1>
+        </div>
       </div>
-    </div>
-  </header>
-
-  <main>
-    <div class="container">
-      <div class="wrapper">
-        <section class="about">
-          <h2 class="title">About me</h2>
-          <p class="about__descr">My goal as a js developer is to apply my technical knowledge and skills in the
-            development of IT solutions that will solve user requests. And also there is a great desire to develop in
-            the
-            field of IT.</p>
-          <p class="about__descr">I have experience in self-development of a business card site using CMS WordPress. I
-            have the ability to learn quickly, I am also responsible.</p>
-        </section>
-        <section class="skills">
-          <div class="skills__tech">
-            <h2 class="title">Technical Skills</h2>
-            <ul class="skills__list">
-              <li class="skills__item">HTML5</li>
-              <li class="skills__item">CSS3</li>
-              <li class="skills__item">SCSS</li>
-            </ul>
-          </div>
-          <div class="skills__language">
-            <h2 class="title">Language</h2>
-            <p class="skills__text"><span class="span">English Level:</span> Beginner (A1)</p>
-          </div>
-          <div class="skills__education">
+    </header>
+    <main>
+      <div class="container">
+        <div class="wrapper">
+          <section class="about">
+            <div class="about__inner flex">
+              <h2 class="title">About me</h2>
+              <p class="about__descr">
+                I really like web development and I want to do it professionally. I am currently studying JavaScript
+                course
+                at RS School.</p>
+              <p class="about__descr">
+                My main goal is to start my career as a Front-End developer.<br> I want to improve my JavaScript skills
+                and apply for a job at Frontend.</p>
+              <p class="about__descr">I have experience in self-development of a business card site using CMS WordPress.
+                I have the ability to learn quickly, I am also responsible.</p>
+            </div>
+            <div class="about__skills flex">
+              <h2 class="title">Technical Skills</h2>
+              <ul class="about__list">
+                <li class="about__item">HTML5</li>
+                <li class="about__item">CSS3</li>
+                <li class="about__item">SCSS</li>
+                <li class="about__item">JavaScript</li>
+                <li class="about__item">Git, Github</li>
+                <li class="about__item">Photoshop, Figma</li>
+              </ul>
+            </div>
+          </section>
+          <section class="skills">
+            <div class="skills__soft flex">
+              <h2 class="title">My Skills</h2>
+              <ul class="skills__list">
+                <li class="skills__item">responsibility</li>
+                <li class="skills__item">learnability</li>
+                <li class="skills__item">industriousness</li>
+              </ul>
+            </div>
+            <div class="skills__language flex">
+              <h2 class="title">Language</h2>
+              <p class="skills__text"><span class="span">English Level:</span> Beginner (A1)</p>
+            </div>
+          </section>
+          <section class="education">
             <h2 class="title">Education</h2>
-            <div class="skills__date span">2010</div>
-            <div class="skills__university"><span class="span">University:</span> KSU Russia</div>
-            <div class="skills__university"><span class="span">Specialty:</span> process automation</div>
-          </div>
-        </section>
+            <div class="education__inner">
+              <div class="education__date span">2010</div>
+              <div class="education__university">
+                <p class="education__text"><span class="span">University:</span>KSU Russia</p>
+                <p class="education__text"><span class="span">Specialty:</span>Process automation</p>
+              </div>
+            </div>
+            <div class="education__inner">
+              <div class="education__date span">2020</div>
+              <p class="education__text"><span class="span">Course:</span>Site layout from 0 to 1</p>
+            </div>
+          </section>
+          <section class="sample-code">
+            <h2 class="title">Sample code</h2>
+            <pre><code class="javascript">
+            function getMiddle(s) { 
+              let arr = s.split('');
+              let mid = arr[Math.round((arr.length - 1) / 2)];
+              let midl = arr[Math.round((arr.length - 2) / 2)];
+                if (arr.length % 2 === 1) {
+                return mid;
+              } else {
+                return `${midl}${mid}`
+              }
+            }
+          </code></pre>
+          </section>
+        </div>
       </div>
-    </div>
-  </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__contacts">
-        <h2 class="footer__title">Contacts:</h2>
-        <div class="footer__inner">
-          <ul class="footer__list">
-            <li class="footer__email">email:
-              <a class="footer__link" href="mailto:irinasss2009@yandex.ru">irinasss2009@yandex.ru</a>
-            </li>
-            <li class="footer__github">github:
-              <a class="footer__link" href="https://github.com/IrinaShm">@IrinaShm</a>
-            </li>
-          </ul>
-          <div class="footer__logo">
-            <img src="images/rs_school_js.svg" alt="logo">
-            <a class="footer__link" href="https://rs.school/js/">RS Shool</a>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__contacts">
+          <h2 class="footer__title">Contacts:</h2>
+          <div class="footer__inner">
+            <ul class="footer__list">
+              <li class="footer__email">email:
+                <a class="footer__link" href="mailto:irinasss2009@yandex.ru">irinasss2009@yandex.ru</a>
+              </li>
+              <li class="footer__github">github:
+                <a class="footer__link" href="https://github.com/IrinaShm">@IrinaShm</a>
+              </li>
+            </ul>
+            <a class="footer__link" href="https://rs.school/js/">
+              <img class="footer__img" src="images/rs_school_js.svg" alt="logo">RS Shool</a>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </body>
 
 </html>
