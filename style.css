@@ -53,7 +53,7 @@ ul {
   border: 1px solid #0aa8a8;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 680px) {
   .wrapper {
     padding: 15px;
   }
@@ -160,7 +160,7 @@ ul {
   margin-bottom: 15px;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 680px) {
   .about__inner,
   .about__skills {
     flex-basis: 100%;
@@ -191,7 +191,7 @@ ul {
   z-index: 10;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 680px) {
   .skills__soft,
   .skills__language {
     flex-basis: 100%;
@@ -224,7 +224,7 @@ ul {
   margin-top: 30px;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 680px) {
   .education__inner {
     flex-wrap: wrap;
   }
@@ -242,7 +242,7 @@ ul {
   padding: 30px 50px;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 680px) {
   .footer__contacts {
     padding: 15px;
   }
