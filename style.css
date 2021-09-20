@@ -288,3 +288,11 @@ ul {
   height: 40px;
   padding-bottom: 15px;
 }
+
+.text {
+  width: 300px;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #ff0000;
+  padding-left: 15px;
+}
