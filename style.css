@@ -6,6 +6,7 @@ html,
 body {
   height: 100%;
   position: relative;
+  overflow-x: hidden;
 }
 
 body {
@@ -290,7 +291,8 @@ ul {
 }
 
 .text {
-  width: 300px;
+  width: 200px;
+  font-size: 14px;
   margin: 0 auto;
   color: #fff;
   background-color: #ff0000;
